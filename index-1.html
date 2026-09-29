@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shubh Navratri 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="#nights">Nau Roop</a><a href="#puja">Puja</a><a href="#garba">Garba</a><a href="#wish">Wish</a>
+  <button class="alt" id="theme" aria-label="Toggle theme">Theme</button>
+</nav>
+
+<header class="hero">
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1>Shubh Navratri</h1>
+    <p>Nau raat, nau roop Maa Durga ke. Diya par tap karo, ghanti bajegi.</p>
+    <div class="count" id="count" aria-live="polite">
+      <div><b id="d">--</b><span>days</span></div>
+      <div><b id="h">--</b><span>hours</span></div>
+      <div><b id="m">--</b><span>min</span></div>
+      <div><b id="s">--</b><span>sec</span></div>
+    </div>
+    <div id="status"></div>
+    <div class="diyas" id="diyas"></div>
+    <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="nights">
+    <h2>Nau Roop, Nau Raat</h2>
+    <p class="sub">Card kholo: mantra, kahani aur bhog. Aaj ki raat highlighted hai.</p>
+    <div class="nights" id="grid"></div>
+  </section>
+
+  <section id="puja" class="two">
+    <div class="box">
+      <h3>Vrat ke liye phalahar</h3>
+      <ul>
+        <li>Kuttu ya singhade ke atte ki puri</li>
+        <li>Sabudana khichdi, samak ki kheer</li>
+        <li>Aloo jeera, lauki, kaddu ki sabzi</li>
+        <li>Dahi, makhana, fruits</li>
+        <li>Sirf sendha namak</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Ghar ki puja</h3>
+      <ul>
+        <li>Pratipada par kalash sthapana</li>
+        <li>Jau boyein, roz pani dein</li>
+        <li>Subah shaam aarti</li>
+        <li>Ashtami ya Navami par kanya pujan</li>
+        <li>Dashami par visarjan</li>
+      </ul>
+      <p class="note">Muhurat apne local panchang se confirm karo.</p>
+    </div>
+  </section>
+
+  <section id="garba" class="two">
+    <div class="box">
+      <h3>Garba basics</h3>
+      <ul>
+        <li>Teen taali: dono haath se 3 taali, phir ghoomo</li>
+        <li>Gol ghere me Maa ki murti ya diya beech me</li>
+        <li>Seedha chalo, anti-clockwise circle</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Dandiya basics</h3>
+      <ul>
+        <li>Do sticks, partner ke saath tap</li>
+        <li>Pehle apni sticks, phir partner ki</li>
+        <li>Beat tez hoti jaaye to step chhote rakho</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="wish">
+    <div class="box wish">
+      <h3>Navratri wish banao</h3>
+      <label for="nm">Naam</label>
+      <input id="nm" placeholder="e.g. Riya" autocomplete="off">
+      <pre id="msg"></pre>
+      <div class="btns">
+        <button id="copy">Copy wish</button>
+        <a class="btn" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>Jai Mata Di. Maa sabki manokamna poori kare.</footer>
+
+<dialog id="dlg">
+  <h3 id="dt"></h3>
+  <p class="d" id="dd"></p>
+  <p id="da"></p>
+  <p class="mantra" id="dm"></p>
+  <div class="btns">
+    <button id="dc">Copy mantra</button>
+    <button class="alt" id="dx">Close</button>
+  </div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
